@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #b8dfe7;
+            color: #333;
+            padding: 20px;
+        }
+
+        .profile-card {
+            max-width: 1200px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        .profile-header {
+            background: linear-gradient(45deg, #6380e5, #403bbd);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            border-bottom: 5px solid #5fd4c5;
+        }
+
+        .profile-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .profile-header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .social-links-header {
+            margin-top: 10px;
+        }
+
+        .social-links-header a {
+            margin-left: 15px;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links-header a:hover {
+            color: #5fd4c5;
+        }
+
+        .profile-content {
+            display: flex;
+            padding: 30px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background: #f9f9f9;
+        }
+
+        .profile-picture {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 5px solid #403bbd;
+            object-fit: cover;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            flex: 2;
+            padding: 20px;
+            color: #555;
+        }
+
+        .profile-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #403bbd;
+            border-bottom: 2px solid #5fd4c5;
+            padding-bottom: 5px;
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .profile-info strong {
+            color: #403bbd;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: grid; /* Usando grid para as UCs */
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+            gap: 10px; /* Espaço entre as colunas */
+        }
+
+        ul li {
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        .profile-footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-info {
+                padding: 20px 0;
+            }
+
+            .social-links-header {
+                margin-top: 10px;
+            }
+
+            ul {
+                grid-template-columns: 1fr; /* Uma coluna em telas menores */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <h1>Lucas Ferreira Lopes de Paulo</h1>
+            <p>Estudante de Ciência da Computação | Analista de Sistemas Júnior</p>
+            <div class="social-links-header">
+                <a href="https://www.linkedin.com/in/lucs-ferreira" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/lucasferreirapl" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:lucs.f.paulo@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-picture">
+                <img src="icon-user.webp" alt="Foto de Lucas Ferreira">
+            </div>
+
+            <div class="profile-info">
+                <!-- Seção Sobre Mim -->
+                <h2>Sobre Mim</h2>
+                <p>Sou Lucas Ferreira Lopes de Paulo, estudante de Ciência da Computação no 5º período. Sempre fui apaixonado por tecnologia e inovação, e busco constantemente expandir meus conhecimentos em programação, desenvolvimento de software e inteligência artificial.</p>
+
+                <!-- Seção Profissional -->
+                <h2>Profissionalmente</h2>
+                <p>Atuo como Analista de Sistemas Júnior, responsável por analisar e desenvolver soluções de software que atendam às necessidades dos usuários e da empresa. Tenho experiência em programação em PHP, análise de requisitos e suporte técnico, buscando aprimorar minhas habilidades.</p>
+            </div>
+        </div>
+
+        <!-- Seção Informações Pessoais -->
+        <div class="profile-info">
+            <h2>Informações Pessoais</h2>
+            <ul>
+                <li><strong>RA:</strong> 622220003</li>
+                <li><strong>Curso e Período Atual:</strong> Ciência da Computação - 5º período</li>
+                <li><strong>E-mail:</strong> lucs.f.paulo@gmail.com</li>
+                <li><strong>Endereço:</strong> Rua Zulmira Bráz, 361, B. Central, Mateus Leme - MG</li>
+            </ul>
+        </div>
+
+        <!-- Seção UCs já cursadas -->
+        <div class="profile-info">
+            <h2>UCs já cursadas</h2>
+            <ul>
+                <li>Ambientes computacionais e conectividade</li>
+                <li>Análise de dados e big data</li>
+                <li>Estruturas de dados e análise de algoritmos</li>
+                <li>Inteligência artificial</li>
+                <li>Modelagem de software</li>
+                <li>Programação de soluções computacionais</li>
+                <li>Sistemas computacionais e segurança</li>
+                <li>Sistemas distribuídos e mobile</li>
+                <li>Teoria da computação e compiladores</li>
+                <li>Usabilidade, desenvolvimento web, mobile e jogos</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
